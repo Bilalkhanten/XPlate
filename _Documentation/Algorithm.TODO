@@ -1,0 +1,419 @@
+Changelog:
+  ✔ Changed the range of indices x, y and z to 26 - 35 so that the same array "alpha" can be used @done (14-02-24 14:31)
+  ✔ Corrected an inconsistency in the naming of the DB::LoadConfig function @done (14-02-25 05:50)
+  ✔ Added an encryption to avoid calling the rebuild script manually @done (14-02-25 06:44)
+  ✔ The rebuild script now simply truncates (empties) the tables and calls the default script to populate the database @done (14-02-25 07:09)
+  ✔ Converted PlateGenerate to a script to more accurately reflect its implementation @done (14-02-25 12:50)
+  ✔ Renamed InnerGen to Plate::Generate @done (14-02-25 12:50)
+  ✔ Renamed PlateRange to Search function to more accurately reflect its implementation @done (14-02-26 07:28)
+
+Default Operation:
+  ☐ If the DB is successfully created
+           ☐ Initialize index i to 0, this will be submitted 26 times representing iterations of the second character KX*###* from (A-Z), e.g. KAZ999Z » KBA000A
+           ☐ Submit index i (and j if available) 
+           ☐ Call PlateGenerate Function
+
+           ☐ Get the status from the response, when successful
+              ☐ Get the progress counter, index i and j from response
+
+              ☐ Loop from the current value of the progress bar to the new value 
+                  ☐ Increment the progress bar, i.e. ##,###,### records ##%
+
+              ☐ Submit index i (and j if available) and call PlateGenerate function
+              ☐ Output the total number of records in the database as the last value of progress
+
+           ☐ Otherwise display the error message returned by the back-end script
+
+Database:
+  ✔ Config script @done (14-02-24 14:02)
+     ✔ Load the configuration file for editing @done (14-02-24 14:02)
+     ✔ Input the configuration properties @done (14-02-24 14:02)
+        ✔ If the file exists and is opened, load the configuration properties for editing @done (14-02-24 14:02)
+     ✔ Input the hostname, username, password and database name @done (14-02-24 14:02)
+     ✔ Submit the connection values @done (14-02-24 14:02)
+     ✔ Test the configuration, call the DB Connect function @done (14-02-24 14:02)
+     ✔ Update the configuration file with the submitted values if the connection is successful @done (14-02-27 13:36)
+
+     ✔ Call the Table Exist function to check if the registration and exclusion tables exist @done (14-02-24 14:02)
+        ✔ If the tables do not exist, create them using the schema @done (14-02-24 14:02)
+        
+     ✔ Call the Field Exist function to check if the registration and exclusion tables contain the proper fields @done (14-02-24 14:02)
+        ✔ If the fields are incorrect, recreate the tables using the schema @done (14-02-24 14:02)
+
+  ✔ DB::LoadConfig function @done (14-02-25 05:51)
+     Locates the configuration file relative to the current directory and loads the configuration properties
+     No arguments
+     Returns TRUE and sets the config properties if the configuration file is found and loaded. Otherwise returns FALSE and the error encountered
+     ✔ Get the directory of the current file @done (14-02-24 07:12)
+     ✔ Create a path to the file in the current dir @done (14-02-27 13:40)
+     ✔ Navigate backwards through the directory structure until the config file is found @done (14-02-24 07:12)
+     ✔ The file is not found in the current directory @done (14-02-24 07:12)
+        ✔ Get the parent of the current directory @done (14-02-24 07:12)
+        ✔ Create a path to the file in the parent dir @done (14-02-24 07:12)
+
+     ✔ After the loop ends, check if the configuration file exists and attempt to open it @done (14-02-24 07:12)
+        ✔ Decode the JSON file to load the config properties @done (14-02-24 07:12)
+        ✔ Return confirmation that the file exists @done (14-02-24 07:12)
+     ✔ If the file doesn't exist or couldn't open @done (14-02-24 07:12)
+        ✔ Compose the error message @done (14-02-24 07:12)
+        ✔ Return the error message and exit @done (14-02-24 07:12)
+
+  ✔ DB::Connect function @done (14-02-23 22:50)
+     Creates a connection to the database with the values stored in the configuration file
+     Arguments:  $conn => an array with connection properties to be used instead of the config file
+     Returns TRUE if the connection was made or FALSE on error (exposing the error message)
+     ✔ Check if the connection string has been provided as an argument and is a valid array @done (14-02-23 22:50)
+        ✔ Set the config properties to the provided argument @done (14-02-23 22:50)
+     ✔ Else, attempt to load the config properties from the file @done (14-02-24 05:58)
+        ✔ Exit the function if the config is not loaded @done (14-02-24 05:58)
+
+     ✔ Use the mysqli::real_connect connection method (see http://us3.php.net/manual/en/mysqli.real-connect.php) @done (14-02-23 22:50)
+     ✔ Attempt to initialize the database connector @done (14-02-23 22:50)
+        ✔ If there is a problem initializing, compose an error message @done (14-02-23 22:50)
+        ✔ Return the error message and exit @done (14-02-23 22:50)
+
+     ✔ Attempt to connect to the database @done (14-02-23 22:50)
+        ✔ Compose the error message if mot successful @done (14-02-23 22:50)
+        ✔ Return the error message and exit @done (14-02-24 06:07)
+
+     ✔ If the connection was made, return confirmation and exit @done (14-02-24 06:07)
+
+  ✔ DB::Get function @done (14-02-23 23:22)
+     Executes a query to return a result.
+     Arguments:  $query  => the query to be executed
+                 $mode   => designates whether a result is being returned (by default) or a record
+     Returns the resulting records if succesfully executed or FALSE if there is an error (exposing the query and error message)
+     ✔ If no connection to the DB has been made @done (14-02-23 23:22)
+        ✔ Attempt a connection to the DB @done (14-02-23 23:22)
+           ✔ Return false if the connection was not made and exit @done (14-02-24 06:22)
+
+     ✔ Attempt to execute the query @done (14-02-23 23:22)
+        ✔ If the query returns values @done (14-02-23 23:22)
+           ✔ If the result is desired @done (14-02-23 23:22)
+              ✔ Return the result @done (14-02-23 23:22)
+           ✔ Otherwise, if only a single record is desired @done (14-02-23 23:22)
+              ✔ Fetch the first record as an associative array @done (14-02-23 23:22)
+              ✔ Do some housekeeping by closing the result @done (14-02-23 23:22)
+              ✔ Return the record @done (14-02-23 23:22)
+
+     ✔ If the query did not execute successfully @done (14-02-23 23:22)
+        ✔ Get the error message @done (14-02-23 23:22)
+        ✔ Log the query that caused the error for debugging @done (14-02-23 23:22)
+
+     ✔ Do some housekeeping by closing the result @done (14-02-23 23:22)
+     ✔ Return false if the query could not execute @done (14-02-23 23:22)
+
+  ✔ DB::Execute function @done (14-02-23 23:38)
+     Executes SQL commands like INSERT, UPDATE, CREATE, DROP, etc. which do not return records
+     Arguments:  $query => the query to be executed
+     Returns TRUE if the query was executed or false if it was not successful
+     ✔ If no connection to the DB has been made @done (14-02-23 23:22)
+        ✔ Attempt a connection to the DB @done (14-02-23 23:22)
+           ✔ Return false if the connection was not made and exit @done (14-02-24 06:22)
+
+     ✔ The query executed successfully @done (14-02-23 23:38)
+        ✔ Do some housekeeping by closing the result @done (14-02-23 23:38)
+     ✔ If the query failed due to an error @done (14-02-23 23:38)
+        ✔ Get the error message @done (14-02-23 23:38)
+        ✔ Log the query that caused the error for debugging @done (14-02-23 23:38)
+
+     ✔ Return false if the query could not execute @done (14-02-23 23:38)
+
+  ✔ DB::TableExists function @done (14-02-24 05:45)
+     Checks for a given table in the database
+     Arguments:  $table  => the name of the table to look for
+     Returns TRUE if the table is found in the db or FALSE if it was not found or there was an error
+     ✔ If no connection to the DB has been made @done (14-02-23 23:22)
+        ✔ Attempt a connection to the DB @done (14-02-23 23:22)
+           ✔ Return false if the connection was not made and exit @done (14-02-24 06:22)
+
+     ✔ Attempt to "show" the table @done (14-02-24 05:45)
+        ✔ If the query returns values @done (14-02-24 05:45)
+           ✔ Do some housekeeping and close the result @done (14-02-24 05:45)
+           ✔ Return confirmation that the table exists and exit @done (14-02-24 05:45)
+        ✔ If the query did not return anything @done (14-02-24 05:45)
+           ✔ Do some housekeeping and close the result @done (14-02-24 05:45)
+
+     ✔ If the query failed due to an error @done (14-02-24 05:45)
+        ✔ Get the error message @done (14-02-24 05:45)
+        ✔ Do some housekeeping and close the result @done (14-02-24 05:45)
+
+     ✔ Return false if the query could not execute @done (14-02-24 05:45)
+
+  ✔ DB::FieldExists function @done (14-02-24 06:31)
+     Check that a column exists in a table
+     Arguments:  $table  => the name of the table to check for the existence of the column
+                 $column => the name of the column to look for
+     Returns TRUE if the field is found in the db or FALSE if it was not found or there was an error
+     ✔ If no connection to the DB has been made @done (14-02-24 06:31)
+        ✔ Attempt a connection to the DB @done (14-02-24 06:31)
+           ✔ Return false if the connection was not made and exit @done (14-02-24 06:31)
+
+     ✔ Attempt to "show" the columns @done (14-02-24 06:31)
+        ✔ If the query returns values @done (14-02-24 06:31)
+           ✔ Do some housekeeping and close the result @done (14-02-24 06:31)
+           ✔ Return confirmation that the field exists and exit @done (14-02-24 06:31)
+        ✔ If the query did not return anything @done (14-02-24 06:31)
+           ✔ Do some housekeeping and close the result @done (14-02-24 06:31)
+
+        ✔ If the query failed due to an error @done (14-02-24 06:31)
+           ✔ Get the error message @done (14-02-24 06:31)
+           ✔ Do some housekeeping and close the result @done (14-02-24 06:31)
+
+     ✔ Return false if the query could not execute @done (14-02-24 06:31)
+
+  ✔ Rebuild script @done (14-02-25 11:48)
+     ✔ Confirm rebuild operation @done (14-02-25 11:48)
+     ✔ For security, generate and send an encryption along with the request to prevent 'accidental' or malicious rebuild operations (which would occur if the rebuild URL was enterred manually) @done (14-02-25 11:48)
+     ✔ Submit request @done (14-02-25 11:48)
+     ✔ Call the DBExecute function to truncate the database tables @done (14-02-25 11:48)
+     ✔ Call the Default script @done (14-02-25 11:48)
+
+Number Plates:
+
+  ✔ Generate script @done (14-02-25 14:08)
+     ✔ Initialize the response status and message @done (14-02-25 14:08)
+     ✔ Check that index i has been sent @done (14-02-25 14:08)
+        ✔ If not respond with an error message and exit @done (14-02-25 14:08)
+
+     ✔ Check that the index is not out of range @done (14-02-25 14:08)
+        ✔ If not respond with an error message and exit @done (14-02-25 14:08)
+
+     ✔ Get the memory limit from the PHP configuration @done (14-02-25 14:08)
+     ✔ Convert the memory limit to bytes @done (14-02-25 14:08)
+     ✔ High memory mode is ON if the difference between the limit and the usage is more than 5 MB @done (14-02-25 14:08)
+
+     ✔ Check that index j has been sent or high memory mode is OFF @done (14-02-25 14:08)
+        ✔ Set index j to 0 by default or get the submitted value @done (14-02-25 14:08)
+        ✔ Check that the index is not out of range @done (14-02-25 14:08)
+           ✔ If not respond with an error message and exit @done (14-02-25 14:08)
+
+        ✔ Generate the query to insert reg. nos K$i$j###* @done (14-02-25 14:08)
+
+        ✔ Attempt to insert 26,000 records into the db @done (14-02-25 14:08)
+           ✔ If successful, return the progress counter @done (14-02-25 15:02)
+           ✔ As long as there are characters left, @done (14-02-25 15:02)
+              ✔ Increment the index for the 3rd character @done (14-02-25 15:02)
+
+           ✔ Otherwise, @done (14-02-25 15:02)
+              ✔ Reset the index of the 3rd character or stop using it if high memory mode is detected @done (14-02-25 15:02)
+
+           ✔ Return the index of the 2nd and 3rd characters for the next series and exit @done (14-02-25 15:02)
+
+        ✔ If there was an error executing the INSERT query @done (14-02-25 14:08)
+           ✔ Respond with an error message and exit @done (14-02-25 14:08)
+     
+     ✔ Index j has not been sent and high memory mode is ON @done (14-02-25 14:08)
+        ✔ Loop through the 3rd character to generate 676,000 registration nos @done (14-02-25 14:08)
+           ✔ Generate the query to insert reg. nos K$i$j###* @done (14-02-25 14:08)
+
+        ✔ Attempt to insert 676,000 records into the db @done (14-02-25 14:08)
+           ✔ If successful, return the progress counter @done (14-02-25 14:08)
+           ✔ Return the index for the 2nd character in the next series and exit @done (14-02-25 14:08)
+
+        ✔ If there was an error executing the INSERT query @done (14-02-25 14:08)
+           ✔ Respond with an error message and exit @done (14-02-25 14:09)
+
+
+  ✔ Plate::Generate function @done (14-02-25 14:15)
+     Generates 26,000 registration nos given the 2nd and 3rd character
+     Arguments: $i => the index of the 2nd character in the registration no
+                $j => the index of the 3rd character in the registration no
+     Returns the query string for the generated registration nos
+     ✔ Initialize the query as a global or public variable so it is available to the Generate script outside this scope @done (14-02-25 14:15)
+     ✔ Initialize the array of alpha numeric characters (A-Z and 0-9) as string literals @done (14-02-25 14:15)
+    
+     ✔ Loop index k from 0 to 25 representing iterations of the seventh character K**###X from (A-Z), e.g. KAA999A » KAA000B @done (14-02-25 14:15)
+      
+        ✔ Loop index x from 26 to 35 representing iterations of the first digit K**1##* from (0-9), e.g. KAA099A » KAA100A @done (14-02-25 14:15)
+         
+           ✔ Loop index y from 26 to 35 representing iterations of the second digit K**#2#* from (0-9), e.g. KAA009A » KAA010A @done (14-02-25 14:15)
+            
+              ✔ Loop index z from 26 to 35 representing iterations of the third digit K**##3* from (0-9), e.g. KAA000A » KAA001A @done (14-02-25 14:15)
+                 ✔ If the query string already contains values, add a comma at the end to separate the next value. @done (14-02-25 14:15)
+                  NOTE: This will happen everytime except the first time hence this condition checks for the most likely/occuring scenario
+                 ✔ Create the registration number by combining the string literal 'K' with the current value of each index in the array of alphanumerics @done (14-02-25 14:15)
+              ✔ End the loop for the third digit (K**##3*) @done (14-02-25 14:15)
+
+           ✔ End the loop for the second digit (K**#2#*) @done (14-02-25 14:15)
+
+        ✔ End the loop for the first digit (K**1##*) @done (14-02-25 14:15)
+
+     ✔ End the loop for the seventh character (K**###X) @done (14-02-25 14:15)
+
+  ✔ Plate::Total function @done (14-02-25 15:03)
+     Counts the total number of registration numebrs in the database
+     Arguments: $active => a boolean that indicates whether to check for active records or all number plates (true by default)
+     Returns the total number of registration numbers according to the condition specified
+     ✔ Build the query string to find the total number plates @done (14-02-25 15:02)
+     ✔ Set the query to look for active numberplates otherwise unless specified @done (14-02-25 15:03)
+
+     ✔ Attempt to get the total from the database @done (14-02-25 15:03)
+        ✔ Return the total if successful and exit @done (14-02-25 15:03)
+
+     ✔ If there was an error executing the query, return false and exit @done (14-02-25 15:03)
+
+  ☐ PlateValidate function
+     ☐ The 2nd, 3rd and 7th character must be letters
+     ☐ Use a string function to automatically transform lowercase letters to uppercase on the keypress event
+     ☐ The 4th, 5th and 6th character must be numbers
+     ☐ The string must be exactly 7 characters long
+     ☐ In case of copy & paste, throw an error if the string does not conform to the right format
+
+  ☐ Find the rank of a number plate
+     ☐ Input the registration no. to search for in the format K**###* (where * is any letter and # is any number)
+     ☐ Call the PlateValidate
+     ☐ Submit the registration no. as the stop value and call the Range Function
+
+  ☐ Find the range between two number plates in any order
+     ☐ Input the start and stop registration nos. to search for in the format K**###* (where * is any letter and # is any number)
+     ☐ Call the PlateValidate for both entries
+     ☐ Submit the start and stop registration nos. and call the Range Function
+
+  ✔ Search script @done (14-02-26 07:25)
+     Queries the rank of a number plate or the range between two registration nos
+     Arguments: search => the registration no or range of registration numbers to be searched
+     Returns the count of active registration nos between two number plates or the rank of one number plate
+     ✔ Check that the number plate or range to be searched has been sent @done (14-02-26 07:25)
+        ✔ If not, respond with an error message and exit @done (14-02-26 07:25)
+
+     ✔ Check that the search string contains one or two valid number plates @done (14-02-26 07:25)
+        ✔ If not, respond with an error message and exit @done (14-02-26 07:25)
+
+     ✔ Get the record of the start value from the database @done (14-02-26 07:25)
+        ✔ Check if the number plate is excluded from the active registry @done (14-02-26 07:25)
+           ✔ If so, respond with the exclusion that applies to the registration number and exit @done (14-02-26 07:25)
+
+        ✔ If there was an error querying the database @done (14-02-26 07:25)
+           ✔ Respond with an error message and exit @done (14-02-26 07:25)
+
+     ✔ Get the record of the stop value from the database @done (14-02-26 07:25)
+        ✔ Check if the number plate is excluded from the active registry @done (14-02-26 07:25)
+           ✔ If so, respond with the exclusion that applies to the registration number and exit @done (14-02-26 07:25)
+
+        ✔ If there was an error querying the database @done (14-02-26 07:25)
+           ✔ Respond with an error message and exit @done (14-02-26 07:26)
+
+     ✔ If the stop value is not provided @done (14-02-26 07:26)
+        ✔ Query the database for the first active number plate in ascending order @done (14-02-26 07:26)
+           ✔ Assign the first active number plate to the stop value @done (14-02-26 07:26)
+        ✔ If there was an error querying the database @done (14-02-26 07:26)
+           ✔ Respond with an error message and exit @done (14-02-26 07:26)
+
+     ✔ Query for the total number of plates between the start and stop value OR between the stop and start value. @done (14-02-26 07:26)
+        Note:This is in case the stop value is lower than the start value
+        ✔ If successful, return the range as the count of all active plates between the start and stop value formatted as ##,###,### @done (14-02-26 07:26)
+        ✔ If there was an error querying the database @done (14-02-26 07:26)
+           ✔ Respond with an error message and exit @done (14-02-26 07:26)
+
+Exclusions:
+  ☐ ExclusionView function (No args)
+     ☐ Call DBGet to query for exclusions in ascending order
+
+     ☐ If the query executed successfully,
+
+        ☐ With each record,
+           ☐ Format the exclusion to display the kind of registration numbers it disallows (see conditions in spec)
+
+        ☐ If an error is encountered
+           ☐ Capture the query string that was executed
+           ☐ Return an error status and message to the user
+           ☐ Exit the function
+
+     ☐ Return the list of exclusions
+
+  ☐ ExclusionAdd function (No args)
+     ☐ Input the exclusion
+     ☐ Validate that the exclusion suits the format as specified in the conditions
+     ☐ Execute the query to store the exclusion in the exclusions table
+
+     ☐ If succesfully executed
+        ☐ Call the ExclusionGenerate function to generate the query for updating the registration nos
+        ☐ Update the registration table to deactivate all number plates that are covered by the exclusion
+           ☐ Confirm the exclusion executed successfully
+
+        ☐ Otherwise if there was a DB error
+           ☐ Capture the query string that was executed
+           ☐ Return an error status and message to the user
+
+     ☐ If the exclusion could not be stored
+        ☐ Capture the query string that was executed
+        ☐ Return an error status and message to the user
+
+  ☐ ExclusionEdit function (No args)
+     ☐ Select the exclusion to be edited
+     ☐ Load the example values
+     ☐ Input the amendment to the exclusion
+     ☐ Validate that the exclusion suits the format as specified in the conditions
+     ☐ Call the ExclusionGenerate function to generate the query for updating the registration nos
+     ☐ Reactivate all the registration numbers that were affected by the current exclusions
+     ☐ Execute the query to store the new exclusion in the exclusions table
+
+     ☐ If succesfully executed
+
+        ☐ Update the registration table to deactivate all number plates that are covered by the new exclusion
+           ☐ Confirm the exclusion executed successfully
+
+        ☐ Otherwise if there was a DB error
+           ☐ Capture the query string that was executed
+           ☐ Return an error status and message to the user
+
+     ☐ If the exclusion could not be stored
+        ☐ Capture the query string that was executed
+        ☐ Return an error status and message to the user
+
+  ☐ ExclusionDelete function (No args)
+     ☐ Select the exclusion to be deleted
+     ☐ Confirm delete
+     ☐ Call the ExclusionGenerate function to generate the query for reactivating registration nos
+     ☐ Reactivate all the registration numbers that were affected by the current exclusions
+     ☐ Execute the query to delete the exclusion from the exclusions table
+
+     ☐ If succesfully executed
+        ☐ Confirm the exclusion was deleted successfully
+
+     ☐ Otherwise if there was a DB error
+        ☐ Capture the query string that was executed
+        ☐ Return an error status and message to the user
+
+  ☐ ExclusionGenerate (args exclusion value, exclusion type)
+     ☐ Get the value and type of the exclusion
+
+     ☐ In the case of starting exclusions
+        ☐ Create the query condition where the value of the last six characters of the registration no. (without the starting "K") starts with the exclusion value
+        ☐ Return the query condition
+
+     ☐ In the case of ending exclusions
+        ☐ Create the query condition where the value of the last six characters of the registration no. (without the starting "K") ends with the exclusion value
+        ☐ Return the query condition
+
+     ☐ In the case of starting and ending exclusions
+        ☐ Split the string to get the starting and ending values
+        ☐ Concatenate the start value, the LIKE operator and the end value
+        ☐ Create the query condition where the last six characters of the registration no. (without the starting "K") matches the exclusion value
+        ☐ Return the query condition
+
+     ☐ In the case of occurences or sequences
+        ☐ Create the query condition where the last six characters of the registration no. (without the starting "K") have an occurence of the exclusion value
+        ☐ Return the query condition
+
+     ☐ In the case of combinations
+        ☐ Split the string to get the combinations
+        ☐ Loop through the combinations to create the query condition where the last six characters of the registration no. (without the starting "K") match the combinations
+        ☐ Return the query condition
+
+  ☐ ExclusionGet function
+     Get the exclusions that apply to an inactive number plate
+     ☐ Submit the number plate
+
+     ☐ Query for all the exclusions in order of ascending type and value
+
+     ☐ If the query is successful
+        ☐ With each record
+           ☐ Check if the exclusion applies to the number plate
+              ☐ Return the exclusion value and type
+
+     ☐ If there is a DB error encountered
+        ☐ Capture the query string that was executed
+        ☐ Return an error status and message to the user
+        ☐ Exit the function

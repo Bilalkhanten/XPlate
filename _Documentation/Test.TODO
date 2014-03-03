@@ -1,0 +1,63 @@
+Database:
+  ☐ When the main page is loaded and there is no configuration file
+  ☐ When the main page is loaded, and there are no tables in the database
+  ☐ When the main page is loaded, and there are no records the database
+
+NoJS:
+  Test that all the following work without JavaScript
+  ☐ Configuring the database connection
+  ☐ Rebuilding the database
+  ☐ Generating the number plates
+  ☐ Finding the rank of a numberplate
+  ☐ Finding the range of two numberplates
+  ☐ 
+
+Cross-browser Compatibility:
+  Test the rendering and functionality in the following browsers
+  ☐ IE6
+  ☐ IE7
+  ☐ IE8
+  ☐ IE9
+  ☐ IE10
+  ☐ IE11
+  ☐ Firefox 2
+  ☐ Firefox 3.5
+  ☐ Firefox (Current stable version)
+  ☐ Opera (Current stable version)
+  ☐ Opera Mini (Current stable version)
+  ☐ Safari (Current stable version)
+  ☐ Chrome (Current stable version)
+
+Responsive Design:
+  Test the rendering and functionality at the following screen resolutions (some sample media queries and devices are given)
+  Note: Think "content first" not "device first". If it ain't broke don't fix it! No need to add media queries if the layout is not broken or the media is not affected.
+
+  Only add a breakpoint for the widths that are sub-optimal.
+
+     Acronym    Aspect Ratio  Resolution  % of web users  Example
+     =======================================================================================================================
+     QVGA                4:3  240x320                     Samsung Brightside
+
+  ☐ >= 320px @media (min-width:320px or 20em), e.g. smartphones, portrait 480x320 phones
+     HVGA                4:3  320x480                     Apple iPhone 3GS, Samsung Gravity Smart
+     WVGA              16:10  480x800                     Nokia Lumia 900, Samsung Galaxy S 4G
+
+  ☐ > 480px @media (min-width:481px or 30.063em), e.g. portrait e-readers, smaller tablets 600 or 640px wide
+     WVGA              ~16:9  600x1024                    Amazon Kindle Fire, Barnes & Noble Nook, HTC Flyer
+
+  ☐ > 641px @media (min-width:641px or 40.063em), e.g. portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+     XGA                 3:4  768x1024              0.1%  HP TouchPad
+     WVGA              16:10  800x480                     Samsung Galaxy S II
+     SVGA                4:3  800x600               0.5%
+
+  ☐ > 961px @media (min-width:961px or 60.063em), e.g. tablet, landscape iPad, lo-res laptops ands desktops
+     XGA               ~16:9  1024x600                6%  Samsung Galaxy Tab, Blackberry Playbook
+     XGA                 4:3  1024x768                6%  Apple iPad 1 & 2
+
+  ☐ > 1024px @media (min-width:1025px or 64.063em), e.g. big landscape tablets, laptops, and desktops
+     WXGA              16:10  1280x800                7%  Acer Iconia Tab, Samsung Galaxy Tab 7.7/10.1, Motorola Xoom
+
+  ☐ > 1280px @media (min-width:1281px or 80.063em), e.g. hi-res laptops and desktops
+    ☐ HD                ~16:9  1366x768               31%
+    ☐ FHD                16:9  1920x1080              13%
+    ☐ FHD                16:9  2560x1440                   Vivo Xplay 3S, Samsung Galaxy S5

@@ -1,0 +1,117 @@
+SPECIFICATION:
+Amend the "Number Plate Counter" program to enable the user configure his own range of excluded characters, e.g. single characters (A,K,G,4,7,W,3,0) or series of characters (BC,RA,KK,63,99,13,555,000,777,212).
+
+The list of excluded characters should be stored and the user allowed to edit delete or add to it. The user should also be able to view the total number of vehicles that can be registered with their list of exclusions.
+
+FUNCTIONS:
+1.	Number Plates
+		a.	Populate the database
+		b. 	View total number of registered vehicles without the excluded number plates
+		c. 	Find the range between two number plates in any order
+		d.	Find the rank of a number plate
+
+2.	Exclusions
+		a.	View current exclusions
+		b.	Add new exclusions
+		c.	Edit exclusions
+		d.	Delete exclusions
+		
+CONDITIONS:
+1.	Number Plates
+		a. 	All number plates must be EXACTLY 7 characters long
+		b. 	All number plates start with "K"
+		c.	All number plates must take the form of 3 letters followed by 3 digits and 1 letter, i.e. K**###* (where * is any letter)
+		d.	No other characters are allowed (including spaces)
+		e.	The range of possible number plates is "KAA000A" to "KZZ999Z"
+		f.	The number plates increment in the following ways,
+				•	by the last digit, 		e.g. KAA000A » KAA001A
+				•	by the last letter, 	e.g. KAA999A » KAA000B
+				• by the third letter, 	e.g. KAA999Z » KAB000A
+				• by the second letter, e.g. KAZ999Z » KBA000A
+
+2.	Exclusions precedence
+    a.  Starting exclusions
+        KQ*###*  - Excludes anything that starts with KQ
+        KAF###*  - Excludes anything that starts with KAF
+        KBC1##*  - Excludes anything that starts with KBC1
+        KAK47#*  - Excludes anything that starts with KAK47
+        KEN254*  - Excludes anything that starts with KEN254
+
+    b.  Ending exclusions
+        K**###I  - Excludes anything that ends with I
+        K**##0O  - Excludes anything that ends with 0O
+        K**#33E  - Excludes anything that ends with 33E
+        K**555S  - Excludes anything that ends with 555S
+        K*B008S  - Excludes anything that ends with B008S
+
+    c.  Starts AND Ends with
+        KA*###Z  - Excludes anything that starts with A and ends with I
+	
+	  d.  Any occurence/sequence of...
+        KX*###*, K*X###*, 
+        K**###X  - Excludes anything with an occurence of X
+
+        K**4##*, K**#4#*, 
+        K**##4*  - Excludes anything with an occurence of 4
+
+        K**21#*, 
+        K**#21*  - Excludes anything with an occurence of 21
+
+        K**007*  - Excludes any sequence of 007
+
+	  e.  Any combination of...
+	  		// Two Letters
+        KX*###Y, K*X###Y, KYX###*,
+        KYY###X  - Excludes anything that contains X and Y in any combination, but does not exclude their individual occurrences
+	  		// Three Letters
+        KXY###Z, KXZ###Y, KYX###Z, KYZ###X, KZX###Y, 
+        KZY###X  - Excludes anything that contains X, Y and Z in any combination, but does not exclude their individual occurrences
+	  		// Two Numbers
+        K**7#2*, K**27#*, K**#72*,
+        K**227*  - Excludes anything that contains 2 and 7 in any combination, but does not exclude their individual occurrences
+	  		// Three Numbers
+        K**345*, K**354*, K**435*, K**453*, K**534*,
+        K**543*  - Excludes anything that contains 2 and 7 in any combination, but does not exclude their individual occurrences
+	  		// A letter and a number
+        KW*6##*, KW*#6#*, KW*##6*, K*W6##*, K*W#6#*, K*W##6*, K*W##6*, K**#6#W, K**##6W, 
+        K**##6W  - Excludes anything that contains W and 6 in any combination, but does not exclude their individual occurrences
+	  		// A letter and two numbers
+        KP*#69*, KP*#96*, KP*69#*, KP*96#*, KP*6#9*, KP*9#6*, K*P#69*, K*P#96*, K*P69#*, K*P96#*, K*P6#9*, K*P9#6*, K**#69P, K**#96P, K**69#P, K**96#P, K**6#9P, 
+        K**9#6P  - Excludes anything that contains P, 6 and 9 in any combination, but does not exclude their individual occurrences
+	  		// Two letters and a number
+        KUV8##*, KUV#8#*, KUV##8*, KVU8##*, KVU#8#*, KVU##8*, KU*##8V, KU*#8#V, KU*8##V, KV*##8U, KV*#8#U, KV*8##U, K*U##8V, K*U#8#V, K*U8##V, K*V##8U, K*V#8#U, 
+        K*V8##U  - Excludes anything that contains U and V in any combination, but does not exclude their individual occurrences
+	  		// A letter and three numbers
+        KN*234*, KN*243*, KN*324#*, KN*342*, KN*423*, KN*432*, K*N234*, K*N243*, K*N324#*, K*N342*, K*N423*, 
+        K*N432*  - Excludes anything that contains N, 2, 3 and 4 in any combination, but does not exclude their individual occurrences
+	  		// Two letters and two numbers
+	  		KIT#09*, KIT#90*, KIT09#*, KIT90#*, KIT0#9*, KIT9#0*, KTI#09*, KTI#90*, KTI09#*, KTI90#*, KTI0#9*, KTI9#0*, KI*#09T, KI*#90T, KI*09#T, KI*90#T, KI*0#9T, KI*9#0T, KT*#09I, KT*#90I, KT*09#I, KT*90#I, KT*0#9I, 
+	  		KT*9#0I  - Excludes anything that contains I, T, 0 and 9 in any combination, but does not exclude their individual occurrences
+	  		// Two letters and three numbers
+	  		KAB158*, KAB185*, KAB518*, KAB581*, KAB815*, KAB851*, KBA158*, KBA185*, KBA518*, KBA581*, KBA815*, KBA851*, KA*158B, KA*185B, KA*518B, KA*581B, KA*815B, KA*851B, KB*158A, KB*185A, KB*518A, KB*581A, KB*815A, 
+	  		KB*851A  - Excludes anything that contains A, B, 1, 5 and 8 in any combination, but does not exclude their individual occurrences
+	  		// Three letters and a number
+	  		KMN##6Q, KMN#6#Q, KMN6##Q, KMQ##6N, KMQ#6#N, KMQ6##N,	KNM##6Q, KNM#6#Q, KNM6##Q, KNQ##6M, KNQ#6#M, KNQ6##M, KQM##6N, KQM#6#N, KQM6##N, KQN##6M, KQN#6#M, 
+	  		KQN6##M  - Excludes anything that contains M, N, Q and 6 in any combination, but does not exclude their individual occurrences
+	  		// Three letters and two numbers
+	  		KRS#45T, KRS#54T, KRS45#T, KRS54#T, KRS4#5T, KRS5#4T,	KRT#45S, KRT#54S, KRT45#S, KRT54#S, KRT4#5S, KRT5#4S,	KSR#45T, KSR#54T, KSR45#T, KSR54#T, KSR4#5T, KSR5#4T,	KST#45R, KST#54R, KST45#R, KST54#R, KST4#5R, KST5#4R,	KTR#45S, KTR#54S, KTR45#S, KTR54#S, KTR4#5S, KTR5#4S,	KTS#45R, KTS#54R, KTS45#R, KTS54#R, KTS4#5R, 
+	  		KTS5#4R  - Excludes anything that contains M, N, Q and 6 in any combination, but does not exclude their individual occurrences
+
+APPROACH:
+1.	Populate a database with all possible number plate values
+		a.	use an array to hold the alphanumeric characters (A-Z0-9) and populate through iteration
+		b.	use database autonumbering function to allocate the rank 
+		c.	each record has an active attribute indicating whether it is included or excluded
+
+2.	Use queries to return
+		a.	the total of active number plates
+		b.	the rank as a count of all active number plates
+		c.	the range as a count of all active number plates between two values
+
+3.	Store the exclusions in the database and use queries to select the number plates with exclusions and make them inactive every 		time an exclusion is created, amended or deleted
+
+Additional Notes:
+1.	Conventions (Notation)
+		a. 	Functions (Verbs) 		- CamelCase
+		b.	Variables/IDs (Nouns)	- lowercase
+		c.	Classes (Adjectives)	-	hyphne-ated

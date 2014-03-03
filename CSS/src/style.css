@@ -1,0 +1,258 @@
+body {
+  background-color: #e5e5e5;
+  color: #222;
+  font-family: Segoe UI, Arial, Sans-serif;
+  text-align: center;
+}
+
+/* 
+ * Abstracted Font Sizes to avoid too many font declarations 
+ * (see https://github.com/stubbornella/csslint/wiki/Don't-use-too-many-font-size-declarations) 
+ */
+.font-32 { /* Applied to <h1> */
+  font-size: 32px;
+}
+.font-24 { /* Applied to <h2> */
+  font-size: 24px;
+}
+
+h1 {
+  color: #0C4662;
+  font-family: Roboto Slab, Courier;
+  font-weight: 400;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+h2 {
+  color: #555;
+  font-family: Roboto Slab, Courier;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.page-margin {
+  margin: 0 auto;
+  max-width: 840px;
+  position: relative;
+  text-align: left;
+}
+header {
+  background: #069;
+  background: linear-gradient(to bottom, #1478A9, #069 132px, #069);
+  height: 140px;
+}
+.logo {
+  background: url(../../Images/build/logo.png) no-repeat 50%;
+  color: #fff;
+  direction: ltr;
+  display: block;
+  font-family: Federal Service Condensed, Arial, Sans-serif;
+  height: 132px;
+  position: relative;
+  text-decoration: none;
+  text-indent: -9999px;
+  width: 336px;
+}
+.slogan {
+  bottom: 0;
+  display: block;
+  font-family: Segoe UI, Arial, Sans-serif;
+  font-style: italic;
+  left: 6px;
+  position: absolute;
+}
+.mastheadnav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mastheadnav ul {
+  list-style-type: none;
+}
+.mastheadnav li {
+  display: inline-block;
+  padding: 0 8px;
+}
+.masthead-config, .masthead-rebuild {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.masthead-config:hover, .masthead-rebuild:hover {
+  color: #fc0;
+}
+.icon {
+  background-image: url(../../Images/build/icon-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 86px;
+  margin: 0 auto;
+  width: 86px;
+}
+.masthead-config-icon {
+  background-position: 0 0;
+}
+.masthead-config:hover .masthead-config-icon {
+  background-position: 0 -86px;
+}
+.masthead-rebuild-icon {
+  background-position: 0 -172px;
+}
+.masthead-rebuild:hover .masthead-rebuild-icon {
+  background-position: 0 -258px;
+}
+.main .page-margin {
+  background-color: white;
+  box-shadow: 0 0 4px #999;
+}
+.main .content {
+  padding: 36px;
+}
+form {
+  margin: 40px 80px;
+}
+label {
+  color: #777;
+  display: block;
+  width: 100%;
+}
+.label-text {
+  float: left;
+  width: 33%;
+}
+input {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  color: #999;
+  float: left;
+  padding: 0 12px 6px;
+}
+.hint {
+  color: #999;
+  float: left;
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 33%;
+  padding: 4px 8px;
+  width: 50%;
+}
+button {
+  background-color: #1478a9;
+  border-radius: 2px;
+  border: 1px solid #069;
+  color: #fff;
+  margin: 36px 8px 0 0;
+  padding: 4px 16px 8px;
+}
+button:hover {
+  background-color: #fc0;
+  border-color: #f90;
+  color: #fff;
+}
+.search-label {
+  float: left;
+  width: 540px;
+}
+.search-label input {
+  width: 107%;
+}
+.search-label .hint {
+  margin-left: 0;
+  width: 107%;
+}
+.search-button, .search-button:hover {
+  background-image: url(../../Images/build/search-sprite.png);
+  background-repeat: no-repeat;
+}
+.search-button {
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50% 0;
+  border: 0;
+  direction: ltr;
+  float: left;
+  margin: 0 0 0 10px;
+  text-indent: -9999px;
+  width: 8%;
+}
+.search-button:hover {
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50% -48px;
+}
+.total, .timer {
+  display: block;
+  font-family: Consolas, Roboto Slab, Courier;
+  text-align: center;
+  width: 100%;
+}
+.total {
+  color: #1478a9;
+  font-size: 110px;
+}
+.timer {
+  color: #999;
+  font-size: 72px;
+}
+.total-text {
+  color: #1478a9;
+  font-size: 21px;
+}
+.progress-container {
+  position: relative;
+}
+.progress-bar {
+  border: 2px solid #fc0;
+  border-radius: 3px;
+}
+.progress {
+  background: #fceabb;
+  background: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  height: 47px;
+}
+.progress-percent {
+  color: #444;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  text-shadow: 1px 1px #ccc;
+  width: 100%;
+}
+.progress-container .hint {
+  margin-left: 0;
+  width: 96%;
+}
+.ui-dialog {
+  text-align: left;
+}
+.ui-dialog .ui-dialog-title {
+  font-size: 24px;
+  font-weight: normal;
+}
+.ui-dialog .ui-dialog-content {
+  color: #555;
+  font-family: Roboto Slab;
+}
+.highlight {
+  color: #c00000;
+  font-size: 110%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ui-widget-content .ui-state-focus {
+  border: 1px solid #069;
+  background: #1478a9 url(../../Libraries/jquery-ui/images/ui-bg_flat_75_1478A9_40x100.png) 50% 50% repeat-x;
+}
+.ui-widget-content .ui-state-hover {
+  border: 1px solid #f90;
+  background: #fc0 url(../../Libraries/jquery-ui/images/ui-bg_flat_75_ffcc00_40x100.png) 50% 50% repeat-x;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+  font-size: 20px;
+}
+.ui-button-text-only .ui-button-text {
+  padding: .4em 1em .6em;
+}

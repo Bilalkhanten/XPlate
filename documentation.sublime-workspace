@@ -1,0 +1,1496 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"number",
+				"number_format"
+			],
+			[
+				"registration",
+				"registrationno"
+			],
+			[
+				"plate",
+				"plate2"
+			],
+			[
+				"reg",
+				"registrationno"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"memory",
+				"memory_get_usage"
+			],
+			[
+				"ini",
+				"ini_get"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"config",
+				"configfile"
+			],
+			[
+				"js",
+				"json_decode"
+			],
+			[
+				"Ba",
+				"BannerLink"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"mailinglist",
+				"mailinglist"
+			],
+			[
+				"sub",
+				"subscriber"
+			],
+			[
+				"local",
+				"localhost"
+			],
+			[
+				"HTML",
+				"HTMLMailMarkup"
+			],
+			[
+				"travelaff",
+				"travelaffairs"
+			],
+			[
+				"Get",
+				"GetByQuery"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"get",
+				"getimagesize"
+			],
+			[
+				"main",
+				"main-section"
+			],
+			[
+				"Se",
+				"Send"
+			],
+			[
+				"subsc",
+				"subscribers"
+			],
+			[
+				"sec",
+				"sectionitems"
+			],
+			[
+				"form-banner",
+				"form-banner-save"
+			],
+			[
+				"so",
+				"sortable_item"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"posiion",
+				"position"
+			],
+			[
+				"newsletter",
+				"newslettersectionitems"
+			],
+			[
+				"icon",
+				"icons-container"
+			],
+			[
+				"icons",
+				"icons-delete"
+			],
+			[
+				"tab",
+				"tabs-2"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"Sec",
+				"SectionItems"
+			],
+			[
+				"S",
+				"SectionItems"
+			],
+			[
+				"section",
+				"sectionitem_gallery"
+			],
+			[
+				"submit",
+				"submitHandler"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"colla",
+				"collapsible"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"Fedras",
+				"FedraSansStd-Book"
+			],
+			[
+				"collapsi",
+				"collapsible-hd"
+			],
+			[
+				"parent",
+				"parentNode"
+			],
+			[
+				"su",
+				"subscribers"
+			],
+			[
+				"News",
+				"Newsletter"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Ne",
+				"Next"
+			],
+			[
+				"sect",
+				"sectionresult"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"FFF",
+				"FFFFFF"
+			],
+			[
+				"0",
+				"006BAA"
+			],
+			[
+				"po",
+				"pos-r	position: relative;"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"wh",
+				"whs-nw	white-space: nowrap;"
+			],
+			[
+				"wo",
+				"wow	word-wrap"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"num",
+				"num_rows"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"br",
+				"background-repeat"
+			],
+			[
+				"v",
+				"va	vertical-align: ${1:top};"
+			],
+			[
+				"bx",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"msth",
+				"masthead_search-fixed"
+			],
+			[
+				"topn",
+				"topnav-fixed"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"special",
+				"special_offers-hd"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"d",
+				"d-b	display: block;"
+			],
+			[
+				"7",
+				"7A7977"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"6",
+				"650D05"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"td",
+				"text-decoration"
+			],
+			[
+				"25",
+				"256AC1"
+			],
+			[
+				"til",
+				"tiles-hd"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"sear",
+				"search-submit"
+			],
+			[
+				"bdrs",
+				"bdrs	border-radius"
+			],
+			[
+				"trs",
+				"trs	transition: ${1:prop} ${2:time};"
+			],
+			[
+				"t",
+				"trs	transition: ${1:prop} ${2:time};"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_Documentation/Specification.TODO",
+			"settings":
+			{
+				"buffer_size": 6952,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_Documentation/Algorithm.TODO",
+			"settings":
+			{
+				"buffer_size": 24622,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_Documentation/Test.TODO",
+			"settings":
+			{
+				"buffer_size": 3125,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"format",
+				"Format Code"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"tasks",
+				"Tasks: Open Link"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"set syntahtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"set t",
+				"Snippet: setTimeout function"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"fe",
+				"Fetch: File"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"synhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"syht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax ja",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/inetpub/wwwroot/es-com/XPlate/Documentation/Specification.TODO",
+		"/C/inetpub/wwwroot/es-com/XPlate/Documentation/Test.TODO",
+		"/C/inetpub/wwwroot/es-com/XPlate/Documentation/Algorithm.TODO",
+		"/C/inetpub/wwwroot/es-com/XPlate/config.json",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/inetpub/wwwroot/es-com/XPlate/test.TODO",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/User/Zeal.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 3/Packages/Zeal/Zeal.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/User/Zeal.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/Zeal/Zeal.sublime-settings",
+		"/C/inetpub/wwwroot/es-com/XPlate/range.php",
+		"/C/Users/Jeff/Google Drive/ES-COM/XPlate/XPlate v1.1/algorithm.TODO",
+		"/C/inetpub/wwwroot/es-com/XPlate/JS/main.js",
+		"/C/inetpub/wwwroot/es-com/XPlate/Include/main.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/Classes/Plate.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/Classes/Exclusion.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/config/index.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/index.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/config/config.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/config/submit.php",
+		"/C/inetpub/wwwroot/es-com/submit.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/CSS/style.css",
+		"/C/inetpub/wwwroot/es-com/XPlate/submit.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/config.php",
+		"/C/inetpub/wwwroot/es-com/XPlate/DB.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment1/codeV1/index.php",
+		"/C/inetpub/wwwroot/es-com/number_plate_counter/specification.TODO",
+		"/C/inetpub/wwwroot/es-com/number_plate_counter/algorithm.TODO",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt4/index.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt4/retrieve.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt4/submit.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment2/codeV1/index.html",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment2/codeV1/validation.html",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment1/codeV1/functions.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/authentication.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/populatedb.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/retrieve.html",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/retrieve.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/functions.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment3/codeV1/instructions.txt",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment1/algorithm/index.txt",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment1/algorithm/isValid.txt",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/assignment1/algorithm/generate.txt",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt4/retrievecode1.4.3.php",
+		"/C/inetpub/wwwroot/es-com/evans/number_plate/index.html",
+		"/C/inetpub/wwwroot/es-com/nathan/number_plate/codeV1/authentication.php",
+		"/C/inetpub/wwwroot/es-com/nathan/number_plate/codeV1/populatedb.php",
+		"/C/inetpub/wwwroot/es-com/nathan/number_plate/codeV1/functions.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt1/index.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt2/index.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt3/index.php",
+		"/C/inetpub/wwwroot/es-com/osoro/number_plate/pt3/Input.html",
+		"/C/Users/Jeff/Google Drive/Stephen Osoro/Number Plate Counter Assignment/index1.4.php",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/User/CodeFormatter.sublime-settings",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/index.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/edit.js",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/banner_update.php",
+		"/C/inetpub/wwwroot/cp3/Includes/Link/search.php",
+		"/C/inetpub/wwwroot/travelaffairs/Classes/Newsletter.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/index.php",
+		"/C/inetpub/wwwroot/cp3/CSS/universal.src.css",
+		"/C/inetpub/wwwroot/travelaffairs/Includes/page.php",
+		"/C/inetpub/wwwroot/travelaffairs/CSS/style.css",
+		"/C/inetpub/wwwroot/travelaffairs/Includes/subscribe.php",
+		"/C/inetpub/wwwroot/travelaffairs/Scripts/script.js.php",
+		"/C/inetpub/wwwroot/travelaffairs/Scripts/banner.js",
+		"/C/inetpub/wwwroot/travelaffairs/fn/banner/carousel.php",
+		"/C/inetpub/wwwroot/travelaffairs/Includes/enquiry.php",
+		"/C/inetpub/wwwroot/travelaffairs/Classes/Template.php",
+		"/C/inetpub/wwwroot/travelaffairs/Scripts/script.js",
+		"/C/inetpub/wwwroot/travelaffairs/search/index.php",
+		"/C/inetpub/wwwroot/travelaffairs/CSS/styles.css",
+		"/C/inetpub/wwwroot/travelaffairs/tasks.TODO",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/report/index.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/report/report.js",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/report/growth.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/import/import.php",
+		"/C/inetpub/wwwroot/travelaffairs/fn/newsletter/send.php",
+		"/C/inetpub/wwwroot/travelaffairs/Classes/Utility.php",
+		"/C/inetpub/wwwroot/cp3/Classes/Template.php",
+		"/C/inetpub/wwwroot/compete/Classes/Template.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/report/submit.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/remove.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/index.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/subscriber.js",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/submit.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/recipients.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/import/index.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/import/import.js",
+		"/C/inetpub/wwwroot/blz/form/form.js",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/save.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/index.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/import/upload.php",
+		"/C/inetpub/wwwroot/cp3/Temp/import.php",
+		"/C/inetpub/wwwroot/blz/form/form.src.css",
+		"/C/inetpub/wwwroot/cp3/Classes/Utility.php",
+		"/C/inetpub/wwwroot/cp3/Includes/Image/upload.php",
+		"/C/inetpub/wwwroot/cp3/Includes/Image/gallery.php",
+		"/C/Users/Jeff/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/edit.js",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/save.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/publish.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/section_edit.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/sectionitem_submit.php",
+		"/C/inetpub/wwwroot/blz/status/status.src.js",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/section_edit.php",
+		"/C/inetpub/wwwroot/headbangaz.biz/htaccess",
+		"/C/inetpub/wwwroot/headbangaz.biz/.htaccess.txt",
+		"/C/inetpub/wwwroot/cp3/newsletter/subscriber/subscriber.php",
+		"/C/inetpub/wwwroot/cp3/content/page/create/submit.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/submit.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/section.php",
+		"/C/inetpub/wwwroot/cp3/newsletter/edit/submit.php",
+		"/C/inetpub/wwwroot/cp3/content/page/page.js",
+		"/C/inetpub/wwwroot/blz/form/form.src.js",
+		"/C/inetpub/wwwroot/cp3/content/page/index.php",
+		"/C/inetpub/wwwroot/cp3/CSS/datatable.css",
+		"/C/inetpub/wwwroot/cp3/newsletter/mailing-list/index.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/section_sort.php",
+		"/C/inetpub/wwwroot/cp3/uploads/gallery/gallery.php",
+		"/C/inetpub/wwwroot/cp3/uploads/gallery/picture.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/sectionitem.php",
+		"/C/inetpub/wwwroot/cp3/content/page/edit/sectionitem_remove.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open files>",
+			"*.php,<open files>",
+			"*.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			",",
+			"self::$filename",
+			"DB::$filename",
+			"$filename",
+			"ctrl+t",
+			"$error",
+			"preg_match",
+			"				//",
+			"x",
+			"traveltoken",
+			"self::$error = self::$mysqli->error ",
+			"if(!self::Connect()	",
+			"]) ?",
+			"$config",
+			"Exit the function and return the error message",
+			"::$config",
+			"$path",
+			"housekeeping by closing",
+			"class file",
+			"config.json",
+			"Exit the function with the error message",
+			"		//",
+			"registration",
+			"is_valid",
+			"self::$url",
+			"banner",
+			"WHERE `id` = $id\"",
+			"form-sectionitem-search",
+			"banner_link-search",
+			"link-banner_link",
+			"form-banner_link",
+			"dialog-banner_link",
+			"label",
+			"email",
+			"url",
+			"source",
+			"link",
+			"$sectionitem",
+			"form-sectionitem",
+			"#form-sectionitem",
+			"sectionitem",
+			"#form-sectionitem-save",
+			"sectionitem",
+			"#dialog-sectionitem",
+			"form-sectionitem",
+			"sectionitem",
+			"sectionitem-search",
+			"dialog-sectionitem",
+			"link-banner_remove",
+			"sectionitem",
+			"addthis",
+			"$page['id']",
+			"json",
+			"event.returnValue",
+			"http",
+			"2014",
+			"2013",
+			"mastheadlogo",
+			"icons-upload",
+			"upload",
+			"DataTable",
+			"#toolBar_subscriber_recycle",
+			"dataTable_pages",
+			"toolBar_pages",
+			"Subscriber",
+			"dialog_confirmRecycle",
+			"$query .=",
+			"form_import",
+			"form-recipients",
+			"Import.Create",
+			"form_import_",
+			"form-recipients",
+			"form_import_",
+			"form_createNewsletter",
+			"#form_import_",
+			"#form_createNewsletter",
+			"CP3.Newsletter",
+			"firstChild lastChild",
+			"$num",
+			"$data",
+			"$row",
+			"$c",
+			"web page",
+			"active",
+			"page",
+			"web page",
+			"page",
+			"editPage",
+			"page",
+			"$_GET['test']",
+			"$",
+			"response_dialog",
+			"x.dialog",
+			"dialog",
+			"$response['dialog']",
+			"; text-align:right",
+			"border-color: #FFF #FFF; border-style: solid; border-width: 1px 3px; padding: 3px 12px;",
+			"; ",
+			"rolien.robbert@bergsasse.nl",
+			"rohiniparanjpe@yahoo.co.uk",
+			"neerja.narayan5@gmail.com",
+			"madtanry@hotmail.com",
+			"hemal@techpak.biz",
+			"ashninair@hotmail.com",
+			");\n\n",
+			", '')",
+			", NULL, NULL, '2013-10-01 13:36:28'",
+			"VALUES \\(\\d+, ",
+			"('",
+			"VALUES \\(\\d+, ",
+			"('",
+			"VALUES \\(\\d+, ",
+			"('",
+			"VALUES \\(\\d+, ",
+			"VALUES (1818,",
+			");",
+			" VALUES",
+			", `referer`, `createtime`",
+			", `company`",
+			"d",
+			", `company`",
+			"`id`, ",
+			"$q",
+			"tab-se",
+			"WHERE `section`",
+			"company",
+			"surname",
+			"firstname"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"dialog-bannerlink\n === undefined\nform-sectionitem-",
+			"#form_import\n === undefined\nform-sectionitem-",
+			"VALUES (\n === undefined\nform-sectionitem-",
+			"' . Site::$config['url'] . '\n === undefined\nform-sectionitem-",
+			"galleryimage\n === undefined\nform-sectionitem-",
+			" === undefined\n === undefined\nform-sectionitem-",
+			" === undefined\n === undefined\nform-section<?php echo $section['id']?>_edit",
+			" === undefined",
+			"Edit",
+			"CP3.Newsletter.Edit.Sections",
+			"subject",
+			"section_",
+			"sectionitem_",
+			"sectionitem_edit",
+			"-sectionitem",
+			"edit_section",
+			"$section",
+			"CP3.Newsletter.Edit.Sections",
+			"\"FedraSansStd-Book\", \"Lucida Grande\", \"Lucida Sans Unicode\", \"Lucida Sans\", Geneva, Verdana, sans-serif;",
+			"",
+			"../F",
+			"url(\"http://www.wexas.com/fonts",
+			".dataTables",
+			": \\1",
+			": ",
+			"Newsletter::$subscriber",
+			"$subscriber",
+			"marketing",
+			"&amp;s",
+			"$stats",
+			"self::$subscriber",
+			"self::$id",
+			"300",
+			"Site::$config",
+			"self::$record",
+			"n.",
+			"DB::",
+			"$site",
+			"self::$html",
+			", \"Lucida Sans Unicode\", Arial, clean, sans-serif",
+			"$html .=",
+			"] . '",
+			"$current['url'] . '",
+			"' .",
+			"$j",
+			"bp.",
+			"#CCC",
+			".main-article",
+			"main-section",
+			"$sectionitem",
+			"$sectionitemresult",
+			"\\'",
+			"&nbsp;",
+			"  &nbsp;",
+			"  style=\"color: #FFFFFF; font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; text-decoration: none;\"",
+			" style=\"color: #FFFFFF; font-size: 10pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; text-decoration: none;\"",
+			"#650D05",
+			"\\'",
+			"+254 20 3751045/55",
+			"$sectionitem['page']",
+			"['page']['path']",
+			"<a href=\"<?php echo Site::$current['url']?>\" target=\"_blank\">",
+			"<a href=\"<?php echo Site::$current['url']\" target=\"_blank\">",
+			"<a href=\"<?php echo Site::$current['url']?>\"",
+			"<?php echo Site::$current",
+			"valign=\"top\"",
+			".png",
+			"\"",
+			"Newsletter",
+			"$newsletter",
+			"_newsletter",
+			"<b>",
+			"src=\"<?php echo Site::$current['url']?>Images",
+			"<?php echo Site::$current['url']?>",
+			"CP3.Newsletter",
+			"_createNewsletter",
+			"\"",
+			"$row",
+			"form_editPageContent_id",
+			"'FedraSansStd-Book'",
+			"<h2>",
+			"$breadcrumbs",
+			"Template::",
+			"TravelAffairs.com",
+			".topnav .submenu",
+			"Status",
+			"response_dialog",
+			"#response_dialog",
+			"newsletter_dialog",
+			"stBtns",
+			"Status",
+			"traveltoken",
+			"First Name",
+			"newsletter_signupform-",
+			"newsletter_signupform",
+			"#7A7977",
+			"#newsletter_dialogform-",
+			"#78291C",
+			"masthead_search-fixed",
+			".masthead_search",
+			".masthead_logo",
+			".masthead_nav",
+			"searchform-submit",
+			".addClass('topnav-fixed')",
+			".topnav-fixed",
+			"href=\"javascript:;\"",
+			"'",
+			"doc",
+			"href=\"#\"",
+			"",
+			"clear",
+			"masthead-nav",
+			"",
+			"class=\"context-menu\"",
+			"<abbr title=\"Small and Medium-sized Enterprises\">SMEs</abbr>",
+			"<abbr title=\"Knowledge Process Outsourcing\">KPO</abbr>",
+			"<abbr title=\"Knowledge Process Outsourcing\">BPO</abbr>",
+			"<abbr title=\"Business Process Outsourcing\">BPO</abbr>",
+			"class=\"context-menu\"",
+			"_htmlelements",
+			"* _",
+			"+\\1",
+			"topnav",
+			"<span class=\"tiles-hd\"><span>\\1</span>",
+			"search-submit"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_Documentation/Specification.TODO",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_Documentation/Algorithm.TODO",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8477,
+								8477
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_Documentation/Test.TODO",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "/C/inetpub/wwwroot/es-com/es-com.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"newsletter",
+				"travelaffairs/Classes/Newsletter.php"
+			],
+			[
+				"includeslinksea",
+				"cp3/Includes/Link/search.php"
+			],
+			[
+				"sectionitem",
+				"cp3/newsletter/edit/sectionitem_submit.php"
+			],
+			[
+				"newsletteredit",
+				"cp3/newsletter/edit/index.php"
+			],
+			[
+				"bannerupdate",
+				"cp3/newsletter/edit/banner_update.php"
+			],
+			[
+				"newslettered",
+				"cp3/newsletter/edit/edit.js"
+			],
+			[
+				"pageedit",
+				"cp3/content/page/edit/index.php"
+			],
+			[
+				"cp3newslettered",
+				"cp3/newsletter/edit/index.php"
+			],
+			[
+				"import",
+				"cp3/newsletter/subscriber/import/import.php"
+			],
+			[
+				"form.js",
+				"blz/form/form.js"
+			],
+			[
+				"universa",
+				"cp3/CSS/universal.src.css"
+			],
+			[
+				"save",
+				"cp3/newsletter/edit/save.php"
+			],
+			[
+				"universal.src",
+				"cp3/CSS/universal.src.css"
+			],
+			[
+				"form.css",
+				"blz/form/form.src.css"
+			],
+			[
+				"style",
+				"travelaffairs/CSS/style.css"
+			],
+			[
+				"section",
+				"cp3/newsletter/edit/section.php"
+			],
+			[
+				"blzstat",
+				"blz/status/status.src.js"
+			],
+			[
+				"form.src",
+				"blz/form/form.src.js"
+			],
+			[
+				"datatable.css",
+				"cp3/CSS/datatable.css"
+			],
+			[
+				"temla",
+				"cp3/Classes/Template.php"
+			],
+			[
+				"page",
+				"cp3/content/page/page.js"
+			],
+			[
+				"subscriber",
+				"cp3/newsletter/subscriber/subscriber.js"
+			],
+			[
+				"contentpageinde",
+				"cp3/content/page/index.php"
+			],
+			[
+				"recipients",
+				"cp3/newsletter/edit/recipients.php"
+			],
+			[
+				"send",
+				"travelaffairs/fn/newsletter/send.php"
+			],
+			[
+				"utility",
+				"travelaffairs/Classes/Utility.php"
+			],
+			[
+				"page.p",
+				"travelaffairs/Includes/page.php"
+			],
+			[
+				"page.php",
+				"travelaffairs/Includes/page.php"
+			],
+			[
+				"ui.css",
+				"travelaffairs/CSS/ui.css"
+			],
+			[
+				"send.p",
+				"travelaffairs/fn/newsletter/send.php"
+			],
+			[
+				"subscrib",
+				"travelaffairs/Includes/subscribe.php"
+			],
+			[
+				"subscribe",
+				"travelaffairs/Includes/subscribe.php"
+			],
+			[
+				"template",
+				"travelaffairs/Classes/Template.php"
+			],
+			[
+				"status",
+				"blz/status/status.src.css"
+			],
+			[
+				"utilit",
+				"travelaffairs/Classes/Utility.php"
+			],
+			[
+				"templ",
+				"cp3/Classes/Template.php"
+			],
+			[
+				"universal",
+				"cp3/CSS/universal.src.css"
+			],
+			[
+				"link",
+				"cp3/Includes/Link/link.js"
+			],
+			[
+				"blz.src",
+				"blz/blz.src.js"
+			],
+			[
+				"blz",
+				"blz/blz.js"
+			],
+			[
+				"main.src",
+				"cp3/Scripts/main.src.js"
+			],
+			[
+				"image",
+				"cp3/Includes/Image/image.js"
+			],
+			[
+				"newslettercreate",
+				"cp3/newsletter/create/submit.php"
+			],
+			[
+				"contentpagecreate",
+				"cp3/content/page/create/submit.php"
+			],
+			[
+				"cp3/scrip",
+				"cp3/Scripts/main.js"
+			],
+			[
+				"image.js",
+				"cp3/Includes/Image/image.js"
+			],
+			[
+				"includes/ima",
+				"cp3/Includes/Image/image.js"
+			],
+			[
+				"includes/link",
+				"cp3/Includes/Link/link.js"
+			],
+			[
+				"includelink",
+				"cp3/Includes/Link/search.php"
+			],
+			[
+				"style.css",
+				"travelaffairs/CSS/style.css"
+			],
+			[
+				"cp3universal.css",
+				"cp3/CSS/universal.css"
+			],
+			[
+				"blz.css",
+				"blz/blz.css"
+			],
+			[
+				"collap",
+				"blz/collapsible/collapsible.js"
+			],
+			[
+				"script.js",
+				"travelaffairs/Scripts/script.js"
+			],
+			[
+				"cp3pagedit.js",
+				"cp3/content/page/edit/edit.js"
+			],
+			[
+				"cp3pageedit",
+				"cp3/content/page/edit/index.php"
+			],
+			[
+				"data",
+				"cp3/CSS/datatable.css"
+			],
+			[
+				"page.js",
+				"cp3/content/page/page.js"
+			],
+			[
+				"pageindex.",
+				"cp3/content/page/index.php"
+			],
+			[
+				"pageinde",
+				"cp3/content/page/index.php"
+			],
+			[
+				"pageeditinde",
+				"cp3/content/page/edit/index.php"
+			],
+			[
+				"main",
+				"travelaffairs/Includes/main.php"
+			],
+			[
+				"style.php",
+				"travelaffairs/CSS/style.css.php"
+			],
+			[
+				"stle.",
+				"travelaffairs/CSS/style.src.css"
+			],
+			[
+				"googl",
+				"travelaffairs/Includes/google_analytics.php"
+			],
+			[
+				"newslettersubmit",
+				"cp3/newsletter/edit/submit.php"
+			],
+			[
+				"create.php",
+				"cp3/uploads/gallery/create.php"
+			],
+			[
+				"news",
+				"cp3/newsletter/create/submit.php"
+			],
+			[
+				"index",
+				"travelaffairs/index.php"
+			],
+			[
+				"preview",
+				"cp3/newsletter/edit/preview.php"
+			],
+			[
+				"script",
+				"travelaffairs/Scripts/script.js"
+			],
+			[
+				"site",
+				"cp3/Classes/Site.php"
+			],
+			[
+				"pagesubmit.php",
+				"cp3/content/page/create/submit.php"
+			],
+			[
+				"stat",
+				"blz/status/status.css"
+			],
+			[
+				"secure",
+				"travelaffairs/Includes/secure.php"
+			],
+			[
+				"cp3template",
+				"cp3/Classes/Template.php"
+			],
+			[
+				"",
+				"cp3/newsletter/edit/preview.php"
+			],
+			[
+				"newslettersubmi",
+				"cp3/newsletter/create/submit.php"
+			],
+			[
+				"newssubm",
+				"cp3/newsletter/edit/submit.php"
+			],
+			[
+				"univers",
+				"cp3/CSS/universal.css"
+			],
+			[
+				"cp3contentpageeditindex",
+				"cp3/content/page/edit/index.php"
+			],
+			[
+				"cp3contentpageedit",
+				"cp3/content/page/edit/edit.js"
+			],
+			[
+				"edit.js",
+				"cp3/content/page/edit/edit.js"
+			],
+			[
+				"publish",
+				"cp3/content/page/publish.php"
+			],
+			[
+				"unversal.src",
+				"cp3/CSS/universal.src.css"
+			],
+			[
+				"editor",
+				"travelaffairs/CSS/editor.css"
+			],
+			[
+				"subscri",
+				"travelaffairs/Includes/subscribe.php"
+			],
+			[
+				"erroe",
+				"travelaffairs/Includes/error_handler.php"
+			],
+			[
+				"db",
+				"travelaffairs/Classes/DB.php"
+			],
+			[
+				"utili",
+				"travelaffairs/Classes/Utility.php"
+			],
+			[
+				"wexas",
+				"travelaffairs/wexas2.html"
+			],
+			[
+				"tem",
+				"travelaffairs/Classes/Template.php"
+			],
+			[
+				"berkeleybusiness.co.keindex.php",
+				"berkeleybusiness.co.ke/index.php"
+			],
+			[
+				"berkeleindex",
+				"berkeleybusiness.co.ke/about/index.php"
+			],
+			[
+				"normal",
+				"jQuery/normalize/normalize.css"
+			],
+			[
+				"univer",
+				"CSS/universal.css"
+			],
+			[
+				"con",
+				"Classes/Content.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
